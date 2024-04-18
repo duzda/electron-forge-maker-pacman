@@ -1,6 +1,6 @@
 {
   "name": "electron-forge-maker-pacman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A pacman maker implementation for Electron Forge.",
   "main": "./dist/cjs/MakerPacman.js",
   "module": "./dist/esm/MakerPacman.js",
@@ -35,14 +35,12 @@
     "node": ">=19.0.0 || ^18.11.0"
   },
   "private": "true",
-  "devDependencies": {
-    "@tsconfig/strictest": "^2.0.5",
-    "@electron-forge/shared-types": "^7.4.0",
-    "@types/node": "^20.12.7",
-    "typescript": "^5.4.5"
-  },
   "dependencies": {
     "@electron-forge/maker-base": "^7.4.0",
-    "app-builder-lib": "^25.0.0-alpha.6"
+    "@electron-forge/shared-types": "^7.4.0",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/node": "^20.12.7",
+    "app-builder-lib": "^25.0.0-alpha.6",
+    "typescript": "^5.4.5"
   }
 }
