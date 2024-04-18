@@ -1,0 +1,48 @@
+{
+  "name": "electron-forge-maker-pacman",
+  "version": "1.0.0",
+  "description": "A pacman maker implementation for Electron Forge.",
+  "main": "./dist/cjs/MakerPacman.js",
+  "module": "./dist/esm/MakerPacman.js",
+  "types": "./types/MakerPacman.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/MakerPacman.js",
+      "require": "./dist/cjs/MakerPacman.js",
+      "types": "./types/MakerPacman.d.ts"
+    }
+  },
+  "scripts": {
+    "postinstall": "npm run postinstall:esm && npm run postinstall:cjs",
+    "postinstall:esm": "tsc --module es2022 --moduleResolution bundler --target es2022 --outDir ./dist/esm",
+    "postinstall:cjs": "tsc --module commonjs --moduleResolution node --target es2022 --outDir ./dist/cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duzda/electron-forge-maker-pacman"
+  },
+  "keywords": [
+    "electron",
+    "electron-forge",
+    "maker",
+    "reforged",
+    "packaging",
+    "pacman"
+  ],
+  "author": "duzda",
+  "license": "ISC",
+  "engines": {
+    "node": ">=19.0.0 || ^18.11.0"
+  },
+  "private": "true",
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.5",
+    "@electron-forge/shared-types": "^7.4.0",
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@electron-forge/maker-base": "^7.4.0",
+    "app-builder-lib": "^25.0.0-alpha.6"
+  }
+}

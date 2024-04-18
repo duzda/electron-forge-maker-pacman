@@ -1,0 +1,20 @@
+{
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./cache/.tsbuildinfo",
+    "composite": true,
+    "incremental": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "stripInternal": true,
+    "verbatimModuleSyntax": false,
+    "lib": ["ES2021.String"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declarationDir": "./types",
+  },
+  "files": [
+    "src/MakerPacman.ts",
+  ]
+}
