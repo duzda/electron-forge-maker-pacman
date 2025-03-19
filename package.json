@@ -36,11 +36,11 @@
   },
   "private": "true",
   "dependencies": {
-    "@electron-forge/maker-base": "^7.4.0",
-    "@electron-forge/shared-types": "^7.4.0",
+    "@electron-forge/maker-base": "^7.7.0",
+    "@electron-forge/shared-types": "^7.7.0",
     "@tsconfig/strictest": "^2.0.5",
-    "@types/node": "^20.12.7",
-    "app-builder-lib": "^25.0.0-alpha.6",
-    "typescript": "^5.4.5"
+    "@types/node": "^22.13.10",
+    "app-builder-lib": "^25.1.8",
+    "typescript": "^5.8.2"
   }
 }
